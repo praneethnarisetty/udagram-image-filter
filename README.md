@@ -2,8 +2,8 @@
 Github link: https://github.com/praneethnarisetty/udagram-image-filter This is a micro-service use to process an image.
 ## Github link
 https://github.com/praneethnarisetty/udagram-image-filter
-Tasks
-Setup Node Environment
+
+Tasks Setup Node Environment
 
  You'll need to create a new node server. we should open a new terminal within the project directory and run:
 
