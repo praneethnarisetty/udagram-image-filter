@@ -61,7 +61,7 @@ const upload = multer({ storage, fileFilter });
   /**************************************************************************** */
 
   /* Get public image, filter, store locally */
-  app.get("/filteredimage", async (req, res) => {
+  app.get( "/filteredimage", async ( req:Request, res:Response ) => {
     let isImage;
     let filteredImagePath;
     try {
