@@ -1,51 +1,23 @@
 # Udagram Image Filtering Microservice
+Tasks
+Setup Node Environment
 
-Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+You'll need to create a new node server. Open a new terminal within the project directory and run:
 
-The Image Filtering Microservice, the final project in course 2 is a Node-Express application which runs a simple script to process images.
+    Initialize a new project: npm i
+    run the development server with npm run dev
 
----
+Create a new endpoint in the server.ts file
 
-## IMPLEMENT A RESTFUL ENDPOINT
+The starter code has a task for you to complete an endpoint in ./src/server.ts which uses query parameter to download an image from a public URL, filter the image, and return the result.
 
-```
-GET /filteredimage?image_url={{URL}}
-```
+We've included a few helper functions to handle some of these concepts and we're importing it for you at the top of the ./src/server.ts file.
 
-An endpoint that filters an image from a public url.
+import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
-### FEATURES
+Deploying your system
 
-![depcruise generated graph](./dependencygraph.svg)
-
-1. validates the image_url query
-2. calls filterImageFromURL(image_url) to filter the image
-3. sends the resulting file in the response
-4. deletes any files on the server on finish of the response
-
-- Click [this link](http://cloud-dev-project-2-udagram-image-filte.ap-southeast-2.elasticbeanstalk.com/filteredimage?image_url=https://motorcycles.honda.com.au/img/2019-CRF250-RALLY-Red-1140x500.jpg) to test the API.
-
-- Or, append your own public image url to this link to filter that image
-  ```html
-  http://cloud-dev-project-2-udagram-image-filte.ap-southeast-2.elasticbeanstalk.com/filteredimage?image_url=
-  ```
-
-> Files are deleted manually by making a PUT call to /delete-files end-point. This is so you can view the collection of filtered images before then removing them. Import the following file in Postman.
-
-```terminal
-cloud-dev-project-2-udagram-image-filter.postman_collection.json
-```
-
----
-
-### DEVELOPMENT
-
-- To run locally, clone repo then from project root run ...
-
-```terminal
-npm install
-
-npm run dev
+Follow the process described in the course to eb init a new application and eb create a new environment to deploy your image-filter service! Don't forget you can use eb deploy to push changes.
 ```
 
 ### DEPLOYMENT
