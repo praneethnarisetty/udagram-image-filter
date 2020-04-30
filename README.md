@@ -31,7 +31,6 @@ Follow the process described in the course to eb init a new application and eb c
 
 - AWS Elastic Beanstalk deployed application dashboard.
   ![depcruise generated graph](./deployment_screenshot/eb_app_deployed_and_running_on_aws.png)
-# udagram-image-filter
 ## Using the backend
 You can test the micro-service by sending a GET request:
 ```
