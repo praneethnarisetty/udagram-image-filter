@@ -3,14 +3,14 @@ Github link: https://github.com/praneethnarisetty/udagram-image-filter This is a
 ## Github link
 https://github.com/praneethnarisetty/udagram-image-filter
 
-Tasks Setup Node Environment
+Tasks Setup Node Environment :
 
  You'll need to create a new node server. we should open a new terminal within the project directory and run:
 
     Initialize a new project: npm i
     run the development server with npm run dev
 
-Create a new endpoint in the server.ts file
+Create a new endpoint in the server.ts file :
 
 The starter code has a task for you to complete an endpoint in ./src/server.ts which uses query parameter to download an image from a public URL, filter the image, and return the result.
 
@@ -18,12 +18,12 @@ I included the few helper functions to handle some of the concepts and I importi
 
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
-Deploying your system
+Deploying your system :
 
 Follow this process described in the terminal to eb init a new application and eb create the new environment to deploy your image-filter service Don not forget you can use the eb deploy to push changes.
 
 
-> For deploying used ...
+> For deploying used :
 
 ```terminal
    npm run build
@@ -43,4 +43,4 @@ and
 ```
 http://image-filter-project-seidlr-dev-dev.eu-central-1.elasticbeanstalk.com/filteredimage?image_url=https://www.opensourcecms.com/wp-content/uploads/wordpress-logo.png
 ```
-should return a changed image
+should return a changed image.
