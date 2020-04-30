@@ -18,21 +18,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 Deploying your system
 
 Follow the process described in the course to eb init a new application and eb create a new environment to deploy your image-filter service! Don't forget you can use eb deploy to push changes.
-```
 
-### DEPLOYMENT
-
-- AWS Elastic Beanstalk CLI commands.
-
-```terminal
-andrew@andrew-Alienware-Aurora-R5:~/dev/cloud-dev-project-2-udagram-image-filter$
-
-npm run build
-
-eb init
-
-eb create
-```
 
 > For deploying updates, used ...
 
