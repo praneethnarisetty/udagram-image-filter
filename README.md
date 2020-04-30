@@ -41,6 +41,6 @@ GET /filteredimage?image_url={{IMAGE_URL}}
 ```
 and
 ```
-http://image-filter-project-seidlr-dev-dev.eu-central-1.elasticbeanstalk.com/filteredimage?image_url=https://www.opensourcecms.com/wp-content/uploads/wordpress-logo.png
+http://Cloud-dev-image-Filter-dev.ap-south-1.elasticbeanstalk.com/filteredimage?image_url=https://www.opensourcecms.com/wp-content/uploads/wordpress-logo.png
 ```
 should return a changed image.
