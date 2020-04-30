@@ -103,7 +103,7 @@ const upload = multer({ storage, fileFilter });
   });
 
   /* How to use end point. */
-  app.get("/", async (req, res) => {
+  app.get("/", async ( req:Request, res:Response )=> {
     res.send(
       // Note: I'll ignore tslint warning of no trailing comma,
       // as trailing comma here is removed by prettier formatter.
@@ -117,4 +117,4 @@ const upload = multer({ storage, fileFilter });
     console.log(`Server running http://localhost:${port}`);
     console.log(`Press CTRL+C to stop server`);
   });
-})();
+})(); 
