@@ -24,7 +24,8 @@ Follow the process described in the course to eb init a new application and eb c
 
 ```terminal
 npm run build
-
+eb init
+eb create
 eb deploy
 ```
 
