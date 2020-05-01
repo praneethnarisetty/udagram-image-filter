@@ -79,7 +79,7 @@ const upload = multer({ storage, fileFilter });
   });
 
   /* Upload filtered image file. */
-  app.post("/filter-image", upload.single("file"), async (req, res) => {
+  app.post("/filter-image", upload.single("file"), async ( req:Request, res:Response ) => {
     if (!req.file || !isSupportedFileExt(path.extname(req.file.originalname))) {
       return res
         .status(403)
@@ -97,13 +97,13 @@ const upload = multer({ storage, fileFilter });
   });
 
   /* Delete image files on server. */
-  app.post("/delete-files", async (request, res) => {
+  app.post("/delete-files", async ( req:Request, res:Response ) => {
     deleteLocalFiles(getTempFiles());
     res.status(200).send("All image files have been removed");
   });
 
   /* How to use end point. */
-  app.get("/", async (req, res) => {
+  app.get("/", async ( req:Request, res:Response ) => {
     res.send(
       // Note: I'll ignore tslint warning of no trailing comma,
       // as trailing comma here is removed by prettier formatter.
